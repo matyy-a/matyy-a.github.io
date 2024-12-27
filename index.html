@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuíaDigital - Directorio Premium</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .slide-in { animation: slideIn 0.6s ease-out forwards; }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px) rotateZ(1deg);
+        }
+    </style>
+</head>
+<body class="bg-neutral-900">
+    <!-- Navbar con efecto de vidrio oscuro -->
+    <nav class="fixed w-full z-50 bg-black/30 backdrop-blur-lg border-b border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="text-3xl font-black text-white flex items-center">
+                    <span class="text-red-500">Guía</span>Local
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-white/80 hover:text-white font-medium transition-colors duration-300">Inicio</a>
+                    <a href="#" class="text-white/80 hover:text-white font-medium transition-colors duration-300">Explorar</a>
+                    <a href="#" class="text-white/80 hover:text-white font-medium transition-colors duration-300">Planes</a>
+                    <a href="#" class="text-white/80 hover:text-white font-medium transition-colors duration-300">Contacto</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-white/80 hover:text-white font-medium transition-colors duration-300">Ingresar</a>
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg shadow-red-600/30">
+                        Registrar Negocio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section con diseño asimétrico -->
+    <div class="relative min-h-screen bg-gradient-to-br from-black via-neutral-900 to-red-900">
+        <!-- Elementos de diseño abstractos -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-800/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative pt-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+                <div class="text-white space-y-8">
+                    <h1 class="text-6xl font-black leading-tight">
+                        Descubre lo 
+                        <span class="text-red-500">Extraordinario</span>
+                        en tu Ciudad
+                    </h1>
+                    <p class="text-xl text-gray-300">
+                        Una nueva forma de conectar con los mejores negocios locales. 
+                        Experiencias únicas, servicios excepcionales.
+                    </p>
+                    
+                    <!-- Barra de búsqueda elegante -->
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-4 flex items-center">
+                            <i data-feather="search" class="w-5 h-5 text-gray-400"></i>
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="¿Qué estás buscando?"
+                            class="w-full bg-white/10 backdrop-blur-xl text-white pl-12 pr-4 py-4 rounded-xl border border-white/20 focus:border-red-500 transition-colors duration-300"
+                        >
+                    </div>
+
+                    <!-- Tags populares -->
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white/10 rounded-full text-sm hover:bg-red-500 transition-colors duration-300 cursor-pointer">
+                            #Restaurantes
+                        </span>
+                        <span class="px-4 py-2 bg-white/10 rounded-full text-sm hover:bg-red-500 transition-colors duration-300 cursor-pointer">
+                            #Cafeterías
+                        </span>
+                        <span class="px-4 py-2 bg-white/10 rounded-full text-sm hover:bg-red-500 transition-colors duration-300 cursor-pointer">
+                            #Tendencias
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Grid de imágenes flotantes -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="bg-neutral-800 rounded-2xl p-4 card-hover">
+                            <img src="mc.jpg" class="rounded-lg" alt="Local">
+                        </div>
+                        <div class="bg-neutral-800 rounded-2xl p-4 card-hover">
+                            <img src="mc.jpg" class="rounded-lg" alt="Local">
+                        </div>
+                    </div>
+                    <div class="space-y-4 mt-8">
+                        <div class="bg-neutral-800 rounded-2xl p-4 card-hover">
+                            <img src="mc.jpg" class="rounded-lg" alt="Local">
+                        </div>
+                        <div class="bg-neutral-800 rounded-2xl p-4 card-hover">
+                            <img src="mc.jpg" class="rounded-lg" alt="Local">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Categorías con diseño moderno -->
+    <div class="py-20 bg-neutral-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Explora por Categorías</h2>
+                <p class="text-gray-400 text-xl">
+                    Encuentra exactamente lo que buscas entre nuestras categorías exclusivas
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group cursor-pointer">
+                    <div class="bg-neutral-800 rounded-2xl p-8 transition-all duration-300 hover:bg-red-900">
+                        <div class="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-500/30 transition-colors duration-300">
+                            <i data-feather="coffee" class="w-8 h-8 text-red-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Restaurantes</h3>
+                        <p class="text-gray-400">Descubre sabores únicos</p>
+                    </div>
+                </div>
+                <!-- Repite para otras categorías -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Negocios Destacados con diseño premium -->
+    <div class="py-16 bg-neutral-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Negocios Destacados</h2>
+                <p class="text-gray-400 text-xl">
+                    Los lugares más exclusivos seleccionados para ti
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card de Negocio Premium -->
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden group card-hover">
+                    <div class="relative">
+                        <img src="mc.jpg" alt="Negocio" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                            PREMIUM
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white">Hamburguesas Pepito</h3>
+                            <div class="flex items-center bg-neutral-800 px-2 py-1 rounded-full">
+                                <i data-feather="star" class="w-4 h-4 text-red-500"></i>
+                                <span class="ml-1 text-white font-bold">4.8</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-gray-400 text-sm">
+                            <div class="flex items-center">
+                                <i data-feather="map-pin" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>Av. Principal 123</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>11:00 - 23:00</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="px-2 py-1 bg-neutral-800 rounded-full text-xs text-white">Hamburguesas</span>
+                                <span class="px-2 py-1 bg-neutral-800 rounded-full text-xs text-white">Gourmet</span>
+                            </div>
+                            <a href="#" class="text-red-500 hover:text-red-400 transition-colors duration-300 text-sm">
+                                Ver más →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite para más negocios -->
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden group card-hover">
+                    <div class="relative">
+                        <img src="mc.jpg" alt="Negocio" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                            PREMIUM
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white">Hamburguesas Pepito</h3>
+                            <div class="flex items-center bg-neutral-800 px-2 py-1 rounded-full">
+                                <i data-feather="star" class="w-4 h-4 text-red-500"></i>
+                                <span class="ml-1 text-white font-bold">4.8</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-gray-400 text-sm">
+                            <div class="flex items-center">
+                                <i data-feather="map-pin" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>Av. Principal 123</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>11:00 - 23:00</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="px-2 py-1 bg-neutral-800 rounded-full text-xs text-white">Hamburguesas</span>
+                                <span class="px-2 py-1 bg-neutral-800 rounded-full text-xs text-white">Gourmet</span>
+                            </div>
+                            <a href="#" class="text-red-500 hover:text-red-400 transition-colors duration-300 text-sm">
+                                Ver más →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden group card-hover">
+                    <div class="relative">
+                        <img src="mc.jpg" alt="Negocio" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                            PREMIUM
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white">Hamburguesas Pepito</h3>
+                            <div class="flex items-center bg-neutral-800 px-2 py-1 rounded-full">
+                                <i data-feather="star" class="w-4 h-4 text-red-500"></i>
+                                <span class="ml-1 text-white font-bold">4.8</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-gray-400 text-sm">
+                            <div class="flex items-center">
+                                <i data-feather="map-pin" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>Av. Principal 123</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>11:00 - 23:00</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="px-2 py-1 bg-neutral-800 rounded-full text-xs text-white">Hamburguesas</span>
+                                <span class="px-2 py-1 bg-neutral-800 rounded-full text-xs text-white">Gourmet</span>
+                            </div>
+                            <a href="#" class="text-red-500 hover:text-red-400 transition-colors duration-300 text-sm">
+                                Ver más →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Negocios Simples -->
+    <div class="py-16 bg-neutral-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Otros Negocios</h2>
+                <p class="text-gray-400 text-xl">
+                    Más opciones cerca de ti
+                </p>
+            </div>
+
+            <!-- Grid de negocios -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+                <!-- Card de Negocio Simple -->
+                <div class="bg-neutral-800 rounded-lg overflow-hidden hover:bg-neutral-700 transition-all duration-300 flex h-24">
+                    <img src="mc.jpg" alt="Negocio" class="w-24 h-24 object-cover">
+                    <div class="flex-1 p-4 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-white font-medium mb-1">Café Don Pedro</h3>
+                            <div class="flex items-center text-gray-400 text-sm">
+                                <i data-feather="map-pin" class="w-4 h-4 mr-2 text-red-500"></i>
+                                <span>Calle Robles 456</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-neutral-900 px-2 py-1 rounded-full">
+                            <i data-feather="star" class="w-4 h-4 text-red-500"></i>
+                            <span class="ml-1 text-white text-sm font-bold">4.5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repite para más negocios -->
+            </div>
+
+            <!-- Paginación más sutil -->
+            <div class="flex justify-center items-center space-x-1">
+                <button class="w-8 h-8 flex items-center justify-center rounded-md bg-neutral-800 text-white hover:bg-red-700 transition-colors duration-300">
+                    <i data-feather="chevron-left" class="w-4 h-4"></i>
+                </button>
+                
+                <button class="w-8 h-8 flex items-center justify-center rounded-md bg-red-700 text-white">
+                    1
+                </button>
+                
+                <button class="w-8 h-8 flex items-center justify-center rounded-md bg-neutral-800 text-white hover:bg-red-700 transition-colors duration-300">
+                    2
+                </button>
+                
+                <button class="w-8 h-8 flex items-center justify-center rounded-md bg-neutral-800 text-white hover:bg-red-700 transition-colors duration-300">
+                    3
+                </button>
+                
+                <button class="w-8 h-8 flex items-center justify-center rounded-md bg-neutral-800 text-white hover:bg-red-700 transition-colors duration-300">
+                    <i data-feather="chevron-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planes de Suscripción con diseño premium -->
+    <div class="py-20 bg-neutral-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Planes para tu Negocio</h2>
+                <p class="text-gray-400 text-xl">
+                    Elige el plan perfecto para destacar tu negocio
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Plan Básico -->
+                <div class="bg-neutral-900 rounded-2xl p-8 hover:bg-neutral-700 transition-colors duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-4">Básico</h3>
+                        <div class="text-5xl font-black text-white mb-4">
+                            $999
+                            <span class="text-base font-normal text-gray-400">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-center">
+                            <div class="w-8 h-8 bg-red-500/20 rounded-full flex items-center justify-center mr-3">
+                                <i data-feather="check" class="w-5 h-5 text-red-500"></i>
+                            </div>
+                            Perfil básico del negocio
+                        </li>
+                        <!-- Más características -->
+                    </ul>
+                    <button class="w-full bg-red-500 text-white py-4 rounded-xl hover:bg-red-600 transition-colors duration-300">
+                        Comenzar Ahora
+                    </button>
+                </div>
+
+                <!-- Plan Premium (Destacado) -->
+                <div class="bg-gradient-to-br from-red-900 to-red-700 rounded-2xl p-8 transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-sm font-bold py-2 px-4 rounded-bl-2xl rounded-tr-2xl">
+                        MÁS POPULAR
+                    </div>
+                    <!-- Contenido similar al plan básico pero con más características -->
+                </div>
+
+                <!-- Plan Gold -->
+                <div class="bg-neutral-900 rounded-2xl p-8 hover:bg-neutral-700 transition-colors duration-300">
+                    <!-- Contenido similar -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer con diseño moderno -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6">GuíaLocal</h4>
+                    <p class="text-gray-400">
+                        Conectando personas con los mejores negocios locales.
+                    </p>
+                </div>
+                <!-- Más secciones del footer -->
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                © 2024 GuíaLocal. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
